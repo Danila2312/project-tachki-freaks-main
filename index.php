@@ -1,0 +1,19 @@
+<?php 
+    require_once("./controllers/create_folders.php");
+    require_once("./controllers/connect.php");
+    require_once("./controllers/head.php");
+    require_once("./templates/header.php");
+    require_once("./templates/promo.php");
+    require_once("./templates/catalog.php");
+    require_once("./templates/autorent.php");
+    require_once("./templates/eventrent.php");
+    require_once("./templates/threesteps.php");
+    require_once("./templates/promotions.php");
+    require_once("./templates/services.php");
+    require_once("./templates/reasons.php");
+    require_once("./templates/info.php");
+    require_once("./templates/iconsauto.php");
+    require_once("./templates/women.php");
+    require_once("./templates/footer.php");
+
+?>
