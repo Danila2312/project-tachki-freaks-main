@@ -1,19 +1,980 @@
-<?php 
-    require_once("./controllers/create_folders.php");
-    require_once("./controllers/connect.php");
-    require_once("./controllers/head.php");
-    require_once("./templates/header.php");
-    require_once("./templates/promo.php");
-    require_once("./templates/catalog.php");
-    require_once("./templates/autorent.php");
-    require_once("./templates/eventrent.php");
-    require_once("./templates/threesteps.php");
-    require_once("./templates/promotions.php");
-    require_once("./templates/services.php");
-    require_once("./templates/reasons.php");
-    require_once("./templates/info.php");
-    require_once("./templates/iconsauto.php");
-    require_once("./templates/women.php");
-    require_once("./templates/footer.php");
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="static/stylesheet.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="preload"
+			href="font/PPPangramSans-Bold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="font/PPPangramSans-Semibold.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<title>АрендаТачек.рф</title>
+		<link
+			rel="shortcut icon"
+			href="./static/img/Group 72.png"
+			type="image/x-icon"
+		/>
+	</head>
 
-?>
+	<body>
+		<header>
+			<div class="header__content">
+				<div class="header__logo"><p>арендатачек.рф</p></div>
+				<div class="header-addaptive">
+					<p>аренда<br />тачек.рф</p>
+				</div>
+				<div class="header__nav">
+					<a href="">Подобрать авто</a>
+					<a href="">Условия</a>
+					<a href="">Цены</a>
+					<a href="">О нас</a>
+					<a href="">Контакты</a>
+				</div>
+				<div class="header__contacts">
+					<div class="header__contacts-img">
+						<img src="static/img/Vector.png" alt="" />
+						<img class="icon2" src="static/img/Vector-1.png" alt="" />
+					</div>
+					<div class="header__contacts-number">
+						<p>+7 (499) 110-20-47</p>
+					</div>
+					<div>
+						<a class="header__contacts-button" href="#">Заказать звонок</a>
+					</div>
+				</div>
+				<div class="header__login1">
+					<div><img src="static/img/Group 71.png" alt="" /></div>
+					<div><img src="static/img/Group 72.png" alt="" /></div>
+				</div>
+				<div class="addaptive-menu">
+					<a href=""><img src="./static/img/3poloski.svg" alt="" /></a>
+				</div>
+			</div>
+		</header>
+		<section class="first-section">
+			<div class="first-section__title">
+				<h1 class="first-section__title-h1">
+					Аренда авто <br />
+					в Ногинске
+				</h1>
+				<p class="first-section__title-p">
+					Прокат или аренда автомобиля с водителем и без
+				</p>
+				<p class="first-section__title-palka"></p>
+			</div>
+			<div class="first-section__adventages">
+				<div class="first-section__adventages-item">
+					<img class="photo1" src="static/img/1.png" alt="" />
+					<p>
+						Большой парк <br />
+						автомобилей в наличии
+					</p>
+				</div>
+				<div class="first-section__adventages-item">
+					<img class="photo1" src="static/img/2.png" alt="" />
+					<p>
+						Доставка авто<br />
+						до вашей геолокации
+					</p>
+				</div>
+				<div class="first-section__adventages-item">
+					<img class="photo1" src="static/img/3.png" alt="" />
+					<p>
+						Скидки постоянным<br />
+						клиентам
+					</p>
+				</div>
+				<div class="first-section__adventages-item">
+					<img class="photo1" src="static/img/4.png" alt="" />
+					<p>
+						Любая форма<br />
+						оплаты
+					</p>
+				</div>
+				<div class="first-section__adventages-item">
+					<img class="photo1" src="static/img/5.png" alt="" />
+					<p>Выгодные цены</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="first-section__rent">
+				<div class="text1">
+					<p>Заказать аренду online</p>
+				</div>
+				<div class="line-chips">
+					<div class="inputik">
+						<input class="input1" type="date" placeholder="Начало аренды" />
+						<input class="input2" type="date" placeholder="Завершение аренды" />
+					</div>
+					<div class="checkbox">
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Внедорожник</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Спорт</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Бизнес</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Спорткар</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Премиум</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label for="coding">Комфорт</label>
+						</div>
+					</div>
+					<div class="button">
+						<p class="text2">Найти варианты</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="second-section">
+			<div class="second-section__title">
+				<h2 class="text3">Наш автопарк</h2>
+				<a class="button2" href="#">Смотреть все</a>
+			</div>
+			<div class="second-section__filter">
+				<button class="button4">
+					<img src="static/img/Group 47.png" alt="" />Внедорожники
+				</button>
+				<button class="button3">
+					<img src="static/img/Group 46.png" alt="" />Бизнес
+				</button>
+				<button class="button3">
+					<img src="static/img/Group 48.png" alt="" />Спорткар
+				</button>
+				<button class="button3">
+					<img src="static/img/Group 49.png" alt="" />Премиум
+				</button>
+				<button class="button3">
+					<img src="static/img/Group 50.png" alt="" />Комфорт
+				</button>
+			</div>
+			<div class="second-section__cars">
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">москва</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22.png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>BMW X2, 2021</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">дубай</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/KIA.png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Kia Sportage, 2022</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">москва</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22 (1).png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Lexus LS, 2018</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">дубай</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22 (2).png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Jaguar XF, 2012</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">дубай</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22 (3).png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Toyota RAV4, 2017</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">дубай</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/KIA.png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Mazda 6, 2021</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">москва</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/KIA.png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Kia Sportage, 2022</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">москва</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22 (1).png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>Lexus LS, 2018</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+				<div class="second-section__cars-item">
+					<div class="second-section__cars-item--country">
+						<a href="#">москва</a>
+					</div>
+					<div class="second-section__cars-item--img">
+						<img src="./static/img/image 22.png" alt="" />
+					</div>
+					<div class="second-section__cars-item--name-car">
+						<p>BMW X2, 2021</p>
+					</div>
+					<div class="second-section__cars-item--specifications">
+						<div class="second-section__cars-item--specifications--volume">
+							<img src="./static/img/engine.png" alt="" />
+							<p>2,3 л/бензин</p>
+						</div>
+						<div class="second-section__cars-item--specifications--power">
+							<img src="./static/img/wheel.png" alt="" />
+							<p>317 л.с.</p>
+						</div>
+					</div>
+					<div class="second-section__cars-item--book">
+						<div class="button">
+							<a class="text2" href="#">Забронировать</a>
+						</div>
+						<div class="price">
+							<p>от <span class="price-color">7 150</span> руб/сут.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="second-section__text">
+				<p class="black-text">
+					Москва известна своими величественными аллеями, роскошными торговыми
+					центрами и впечатляющей архитектурой. В таком окружении неудивительно,
+					что спрос на аренду элитных автомобилей в Москве растет с каждым
+					годом.
+				</p>
+				<p class="grey-text">
+					Эти роскошные автомобили стали неотъемлемой частью жизни успешных
+					бизнесменов, звезд шоу-бизнеса и просто людей, стремящихся испытать
+					неповторимые ощущения от комфорта и мощи.
+				</p>
+			</div>
+		</section>
+		<section class="third-section">
+			<div class="third-section__title">
+				<p class="text5">Арендовать авто прямо сейчас!</p>
+			</div>
+			<div class="third-section__content">
+				<div class="all-items">
+					<div class="third-section__content--text">
+						<p class="text6">
+							АрендаТачек в Москве предлагает широкий выбор моделей от ведущих
+							производителей, таких как Mercedes, BMW, Audi . Клиенты могут
+							выбирать между спортивными автомобилями, роскошными седанами или
+							эксклюзивными внедорожниками, чтобы насладиться комфортом и
+							эстетикой этих превосходных машин.
+						</p>
+						<p class="text7">
+							Благодаря услугам аренды, каждый желающий может ощутить себя
+							владельцем такого автомобиля на несколько дней или даже на
+							несколько часов, без необходимости покупки и обслуживания.
+						</p>
+					</div>
+					<div class="two-list">
+						<div>
+							<input class="input5" placeholder="Имя" type="text" />
+						</div>
+						<div>
+							<input
+								class="input6"
+								placeholder="+7 (916) 123-45-67"
+								type="text"
+							/>
+						</div>
+						<div>
+							<button class="button6">Забронировать</button>
+						</div>
+						<div class="checkbox2">
+							<input
+								type="checkbox"
+								id="coding"
+								name="interest"
+								value="coding"
+							/>
+							<label class="text10" for="coding"
+								><span class="text8">Отправляя форму я солгашаюсь</span><br />
+								с политикой обработки персональных данных</label
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fourty-section">
+			<div class="fourty-section__title">
+				<h2>Аренда премиум автомобилей для мероприятий</h2>
+				<p class="addaptive-text">Наш автопарк</p>
+			</div>
+			<div class="fourty-section__content">
+				<div class="fourty-section__item">
+					<div class="addaptive-img">
+						<img src="./static/img/merry.png" alt="" />
+					</div>
+					<div class="fourty-section__item--text">
+						<div>
+							<h3>Аренда авто на свадьбу</h3>
+							<p>
+								Предоставляем аренду премиальных <br />
+								автомобилей для свадьбы с водителем
+							</p>
+						</div>
+						<div class="arrow-button">
+							<a href=""><img src="static/img/Group 58.svg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="fourty-section__item">
+					<div class="addaptive-img">
+						<img src="./static/img/ferrari.png" alt="" />
+					</div>
+					<div class="fourty-section__item--text">
+						<div>
+							<h3>Аренда авто для фотосессий</h3>
+							<p>
+								Предоставляем аренду премиальных<br />
+								автомобилей для фотосессий или видеосъемки
+							</p>
+						</div>
+						<div class="arrow-button">
+							<a href=""><img src="static/img/Group 58.svg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fifty-section">
+			<div class="fifty-section__title">
+				<h2>3 шага, чтобы арендовать авто</h2>
+			</div>
+			<div class="fifty-section__content">
+				<div class="fifty-section__content--item">
+					<div><img src="./static/img/Group 1.svg" alt="" /></div>
+					<div>
+						<h3>Подать заявку</h3>
+						<p>
+							Оформляете заявку на сайте, связываетесь по телефону или в
+							мессенджерах и бронируете автомобиль
+						</p>
+					</div>
+				</div>
+				<div class="fifty-section__content--item">
+					<div><img src="./static/img/Group 2.svg" alt="" /></div>
+					<div>
+						<h3>Договор</h3>
+						<p>
+							Подписываете договор на аренду автомобиля, вносите оплату и
+							страховой депозит
+						</p>
+					</div>
+				</div>
+				<div class="fifty-section__content--item">
+					<div><img src="./static/img/Group 3.svg" alt="" /></div>
+					<div>
+						<h3>Получение</h3>
+						<p>
+							Забираете авто в нашем салоне или мы можем доставить в любую точку
+							Москвы
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sixty-section">
+			<div class="sixty-section__content">
+				<div class="sixty-section__text">
+					<h3 class="sixty-section__text--title">Скидки и акции</h3>
+					<p class="bold-text">
+						Аренда элитных автомобилей в Москве предоставляет возможность
+						воплотить мечты в реальность и создать незабываемые впечатления.
+						Будь то эксклюзивная свадьба, впечатляющий деловой приезд или просто
+						желание испытать роскошь и элегантность автомобиля премиум-класса,
+						эта услуга открывает двери в мир высокого стиля и комфорта.
+					</p>
+					<p class="light-text">
+						Аренда элитных автомобилей в Москве - это возможность позволить
+						<br />
+						себе немного роскоши и создать незабываемые моменты, которые
+						останутся в памяти надолго.
+					</p>
+				</div>
+				<div class="sixty-section__card">
+					<h3 class="sixty-section__text--title--hiden">
+						Арендовать авто прямо сейчас!
+					</h3>
+					<div class="sixty-section__card--content">
+						<div>
+							<img src="./static/img/kia-sale.png" alt="" />
+						</div>
+						<div class="sixty-section__card--text">
+							<h3>Скидки постоянным клиентам</h3>
+							<div class="sixty-section__card--text--div">
+								<p>
+									Постоянным клиентам мы предоставляем скидки до 30% при
+									повторной аренде.
+								</p>
+								<img
+									class="lightning"
+									src="./static/img/lightning.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="sixty-section__card-arrow">
+						<a href="#"><img src="./static/img/arrow.png" alt="" /></a>
+						<a href="#"
+							><img class="revers-arrow" src="./static/img/arrow.png" alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="seventy-section">
+			<div class="seventy-section__title">
+				<h2>Наши услуги</h2>
+			</div>
+			<div class="seventy-section__content">
+				<div class="seventy-section__content--item">
+					<div>
+						<img class="car-photo" src="./static/img/car1.png" alt="" />
+					</div>
+					<div class="seventy-section__content--item--text">
+						<h3>Доставляем авто в любую <br />точку Москвы</h3>
+						<a href="#"
+							><img class="arrow" src="./static/img/Group 58.svg" alt=""
+						/></a>
+					</div>
+				</div>
+				<div class="seventy-section__content--item">
+					<div>
+						<img class="car-photo" src="./static/img/car2.png" alt="" />
+					</div>
+					<div class="seventy-section__content--item--text">
+						<h3>
+							Аренда авто с личным <br />
+							водителем
+						</h3>
+						<a href="#"
+							><img class="arrow" src="./static/img/Group 58.svg" alt=""
+						/></a>
+					</div>
+				</div>
+				<div class="seventy-section__content--item">
+					<div>
+						<img class="car-photo" src="./static/img/car3.png" alt="" />
+					</div>
+					<div class="seventy-section__content--item--text">
+						<h3>
+							Водитель <br />
+							на подмену
+						</h3>
+						<a href="#"
+							><img class="arrow" src="./static/img/Group 58.svg" alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="eighty-section">
+			<div class="eighty-section__title">
+				<h2>
+					Причины заказать аренду <br />
+					авто в АрендаТачек
+				</h2>
+			</div>
+			<div class="eighty-section__content">
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68.png" alt="" />
+					</div>
+					<div>
+						<h3>Страховка</h3>
+						<p>Все наши автомобили застрахованы по ОСАГО И КАСКО</p>
+					</div>
+				</div>
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68-4.png" alt="" />
+					</div>
+					<div>
+						<h3>Ценовая политика</h3>
+						<p>Всегда доступные цены и приятные бонусы постоянным клиентам</p>
+					</div>
+				</div>
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68-2.png" alt="" />
+					</div>
+					<div>
+						<h3>Автопарк</h3>
+						<p>
+							Весь автопарк в отличном состоянии и всегда пополняется новыми
+							моделями
+						</p>
+					</div>
+				</div>
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68-3.png" alt="" />
+					</div>
+					<div>
+						<h3>Ценовая политика</h3>
+						<p>Всегда доступные цены и приятные бонусы постоянным клиентам</p>
+					</div>
+				</div>
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68-1.png" alt="" />
+					</div>
+					<div>
+						<h3>Оплата</h3>
+						<p>
+							Любая удобная для вас форма оплаты (нал/безнал, банковский
+							перевод)
+						</p>
+					</div>
+				</div>
+				<div class="eighty-section__content--item">
+					<div>
+						<img class="icon-adv" src="./static/img/Group 68-5.png" alt="" />
+					</div>
+					<div>
+						<h3>Скорость</h3>
+						<p>Оформление аренды любого авто в течении не более 15 минут</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ninty-section">
+			<div class="ninty-section__content">
+				<div class="ninty-section__content--dubai">
+					<div class="ninty-section__content--dubai--left-side">
+						<div class="ninty-section__content--dubai--title">
+							<h2>Car hire in Dubai for different budget</h2>
+						</div>
+						<div class="ninty-section__content--dubai--main">
+							<p class="bold-text">
+								We guarantee that you get technically sound, clean car with a
+								full tank, comfortable interior. Our staff will independently
+								pick up the car at the expiration of the rental term at the
+								specified location.
+							</p>
+							<p class="light-text">
+								We strive to make car rental in Dubai affordable for everyone.
+								That's why you can rent cars in our office: Economy. Sedans and
+								SUVs you can rent from 149 AED ($40) per day.Comfort. Sports
+								cars, vans, SUVs, sedans with comfortable saloon can be rented
+								from 219 AED ($59) per day.Premium. Premium SUVs and prestigious
+								convertibles can be rent from AED 439 ($119) per day.
+							</p>
+						</div>
+					</div>
+					<div class="ninty-section__content--dubai--right-side">
+						<h2 class="ninty-section__content--dubai--title--hiden">
+							Car hire in Dubai for different budget
+						</h2>
+						<img src="./static/img/Rectangle 34.png" alt="" />
+					</div>
+				</div>
+				<div class="ninty-section__content--rus">
+					<div class="ninty-section__content--rus--left-side">
+						<h2>Аренда машин в Москве</h2>
+						<img src="./static/img/Rectangle 36.png" alt="" />
+					</div>
+					<div class="ninty-section__content--rus--right-side">
+						<div class="ninty-section__content--rus--title">
+							<h2>Аренда машин в Москве</h2>
+						</div>
+						<div class="ninty-section__content--rus--main">
+							<p>
+								Для получения более подробной информации о прокате авто можно
+								посетить наш офис, оставить заявку на сайте или позвонить по
+								телефону <span>+7 (499) 110-20-47</span>
+							</p>
+							<p>
+								Мы всегда рады помочь Вам по любым вопросам и обеспечить
+								качественным авто.
+							</p>
+							<div class="ninty-section--adventure">
+								<div class="ninty-section--adventure--item">
+									<img src="./static/img/234.svg" alt="" />
+									<p>Более 8 лет на рынке проката авто</p>
+								</div>
+								<div class="ninty-section--adventure--item">
+									<img src="./static/img/123.svg" alt="" />
+									<p>>24 премиальных и эксклюзивных моделей</p>
+								</div>
+								<div class="ninty-section--adventure--item">
+									<img src="./static/img/345.svg" alt="" />
+									<p>Автопарк стоимостью более 250 млн. рублей</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ten-section">
+			<div class="ten-section__content">
+				<img src="./static/img/image 21.png" alt="" />
+				<img src="./static/img/Kia-Motors-Logo-100x100 2.png" alt="" />
+				<img src="./static/img/Kia-Motors-Logo-100x100 4.png" alt="" />
+				<img src="./static/img/Kia-Motors-Logo-100x100 3.png" alt="" />
+				<img src="./static/img/Kia-Motors-Logo-100x100 5.png" alt="" />
+				<img src="./static/img/Kia-Motors-Logo-100x100 6.png" alt="" />
+				<img
+					class="ford"
+					src="./static/img/Kia-Motors-Logo-100x100 7.png"
+					alt=""
+				/>
+			</div>
+		</section>
+		<section class="eleven-section">
+			<div class="secta1">
+				<img src="./static/img/chika.png" alt="" />
+			</div>
+			<div class="secta2">
+				<p class="text11">Остались вопросы?</p>
+				<p class="text12">
+					Менеджер свяжется с вами в течение 15 минут и сможет <br />
+					ответить на все интересующие вопросы
+				</p>
+				<p class="text13">+7 (499) 110-20-47</p>
+				<div>
+					<input class="butt7" placeholder="Имя" type="text" />
+				</div>
+				<div>
+					<input class="butt7" placeholder="+7 (916) 123-45-67" type="text" />
+				</div>
+				<button class="butt8">Забронировать</button>
+				<div class="checkbox2">
+					<input type="checkbox" id="coding" name="interest" value="coding" />
+					<label class="text10" for="coding"
+						><span class="text8">Отправляя форму я солгашаюсь</span><br />
+						с политикой обработки персональных данных</label
+					>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-section">
+				<div class="full-column">
+					<div class="header__logo">
+						<p>АРЕНДАТАЧЕК.РФ</p>
+					</div>
+					<div class="inline-block">
+						<div>
+							<p class="text15">+7 (499) 110-20-47</p>
+							<p class="text16">Рабочие часы: с 10:00 до 20:00</p>
+						</div>
+						<div>
+							<button class="butt9">Заказать звонок</button>
+						</div>
+					</div>
+					<div class="icon-text">
+						<div>
+							<img src="./static/img/ic1.svg" alt="" />
+							<p>г. Ногинск, ул. Ремесленная, д. 1178А</p>
+						</div>
+						<div class="pupa-dupa">
+							<img src="./static/img/ic2.svg" alt="" />
+							<p>info@арендатачек.рф</p>
+						</div>
+					</div>
+				</div>
+				<div class="border">
+					<div class="title-column">
+						<div class="addaptive-footer">
+							<p class="title">клиентам</p>
+							<img
+								class="strelka-footer"
+								src="./static/img/strelka.svg"
+								alt=""
+							/>
+						</div>
+						<div class="to">
+							<p>О нас</p>
+							<p>Условия</p>
+							<p>Отзывы</p>
+							<p>Статьи</p>
+							<p>Контакты</p>
+						</div>
+					</div>
+					<div class="title-column">
+						<div class="addaptive-footer">
+							<p class="title">автопарк</p>
+							<img
+								class="strelka-footer"
+								src="./static/img/strelka.svg"
+								alt=""
+							/>
+						</div>
+						<div class="to">
+							<p>Внедорожники</p>
+							<p>СпортКар</p>
+							<p>Бизнес</p>
+							<p>Премиум</p>
+							<p>Комфорт</p>
+						</div>
+					</div>
+					<div class="title-column">
+						<div class="addaptive-footer">
+							<p class="title">мероприятие</p>
+							<img
+								class="strelka-footer"
+								src="./static/img/strelka.svg"
+								alt=""
+							/>
+						</div>
+						<div class="to">
+							<p>На свадьбу</p>
+							<p>На фотосессию</p>
+							<p>На видеосьемку</p>
+							<p>На день рождения</p>
+						</div>
+					</div>
+					<div class="palka"></div>
+					<div class="politic">
+						<p>© 2023 Кчау</p>
+						<p>Политика конфиденциальности</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
